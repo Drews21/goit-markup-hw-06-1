@@ -497,32 +497,102 @@
                 <use href="./images/cancel-ico.svg#icon-cancel-icon-01"></use>
             </svg>
             </button>
+
+
+            <!------- M O D A L  C O N T E N T ------->
+
             <p class="reg-text">Оставьте свои данные, мы вам перезвоним</p>
-            <ul class="reg-list list">
-                <li class="reg-item reg-name">
-                    <svg>
-                        <use></use>
-                    </svg>
 
-                </li>
-                <li class="reg-item reg-phone">
-                    <svg>
-                        <use></use>
-                    </svg>
+            <form action="#" class="form">
+                <div class="form-field">
+                <label for="user-name" class="form-input-text">Имя</label> <!--name-->
+                    <div class="form-input-wrap">
+                        <input type="text" name="user-name" id="user-name" class="form-input"/>
+                            <svg class="reg-icon" width="18" height="18">
+                                <use href="./images/registration-ico.svg#icon-user"></use>
+                            </svg>
+                    </div>
+                </div>
+                    
+                
 
-                </li>
-                <li class="reg-item reg-mail">
-                    <svg>
-                        <use></use>
-                    </svg>
+                <div class="form-field">
+                    <label for="user-phone" class="form-input-text">Телефон</label> <!--tel-->
+                    <div class="form-input-wrap">
+                        <input type="text" name="user-phone" id="user-phone" class="form-input" />
+                        <svg class="reg-icon" width="18" height="18">
+                            <use href="./images/registration-ico.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
 
-                </li>
-                <li class="reg-item reg-comments">
+                <div class="form-field">
+                    <label for="user-email" class="form-input-text">Почта</label> <!--mail-->
+                    <div class="form-input-wrap">
+                        <input type="text" name="user-name" id="user-email" class="form-input" />
+                        <svg class="reg-icon" width="18" height="18">
+                            <use href="./images/registration-ico.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </div>
 
-                </li>
-            </ul>
+                <div class="form-field-textarea">
+                    <label for="comment" class="form-input-text">Комментарий</label>
+                    <textarea name="comment" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
+                </div>
+                
+                <div class="form-checkbox">
+                    <input type="checkbox" name="policy" id="form-check" 
+                    class="form-check is-hidden"/>
+                    <label for="form-check" 
+                    class="form-check-text"><span>
+                            <svg class="icon-check" width="15" height="15">
+                                <use href="./images/done-icon.svg#icon-done"></use>
+                            </svg>
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="" class="contract">Условия договора</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="primary-btn form-btn">Отправить</button>
+                </form>
+                
         </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
+
+<!-------------- П О Д С К А З К А ------------>
+<!--<ul class="reg-list list">
+                <span class="reg-position">Имя</span>
+                <li class="reg-item reg-name">
+                    <svg class="reg-icon" width="18" height="18">
+                        <use href="./images/registration-ico.svg#icon-user"></use>
+                    </svg>
+
+                </li>
+                <span class="reg-position">Телефон</span>
+                <li class="reg-item reg-phone">
+                    <svg class="reg-icon" width="18" height="18">
+                        <use href="./images/registration-ico.svg#icon-phone"></use>
+                    </svg>
+
+                </li>
+                <span class="reg-position">Почта</span>
+                <li class="reg-item reg-mail">
+                    <svg class="reg-icon" width="18" height="18">
+                        <use href="./images/registration-ico.svg#icon-mail"></use>
+                    </svg>
+
+                </li>
+                
+                    <span class="reg-position">Комметарии</span>
+                    <div class="reg-cmnt">
+                        <li class="reg-item reg-comments">
+                            <span class="input=txt">Введите текст</span>
+                    </div>
+                
+                </li>
+            </ul>-->
