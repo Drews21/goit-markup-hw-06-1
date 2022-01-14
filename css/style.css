@@ -200,7 +200,17 @@ img {
 
 /*-----button  HERO-----*/
 .primary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  min-width: 200px;
+
   background-color: var(--accent-color);
+
+  /*    margin-right: 0;*/
+
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -343,7 +353,7 @@ img {
   padding: 12px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--primary-shade2-color);
+  color: var(--icon-color);
 }
 .team-social-icon {
   /*svg*/
@@ -443,6 +453,10 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
+}
+
+.modal-close:hover .close-icon {
+  fill: var(--accent-color);
 }
 
 .close-icon {
@@ -579,6 +593,7 @@ img {
 .projects-item:focus .projects-card {
   transform: translateY(0);
   opacity: 1;
+  cursor: pointer;
   pointer-events: default;
 }
 
@@ -654,7 +669,8 @@ img {
 .join-us-icon {
   fill: var(--secondary-color);
 }
-.join-us-text {
+
+.footer-title {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-color);
@@ -666,16 +682,7 @@ img {
 
 .subscribe {
   position: relative;
-  width: 570px;
-
-  margin-left: 93px;
-}
-.subscribe-text {
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--secondary-color);
-  margin-top: 6px;
-  margin-bottom: 20px;
+  margin-left: auto;
 }
 .subscribe-form {
   display: flex;
@@ -700,28 +707,7 @@ img {
 }
 
 .sub-btn-txt {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-
-  width: 200px;
-  height: 50px;
-  padding: 10px 28px;
   margin-left: 12px;
-  margin-right: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 }
 .subscribe-icon {
   margin-left: 10px;
@@ -730,10 +716,6 @@ img {
 
 /******** M O D A L content ********/
 
-.form {
-  display: flex;
-  flex-direction: column;
-}
 .reg-text {
   font-style: normal;
   font-weight: bold;
@@ -751,7 +733,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
-
+  fill: var(--primary-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -779,14 +761,6 @@ img {
   color: var(--primary-color);
 }
 
-.form-input:focus {
-  border-color: var(--accent-color);
-}
-
-.form-input:focus + .reg-icon {
-  fill: var(--accent-color);
-}
-
 .form-input-text {
   display: block;
   margin-bottom: 4px;
@@ -803,6 +777,7 @@ img {
 }
 
 .form-comment {
+  display: block;
   width: 100%;
   height: 120px;
   padding: 12px 16px;
@@ -819,7 +794,18 @@ img {
   color: var(--primary-color);
 }
 
-.form-comment:focus {
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:hover + .reg-icon,
+.form-input:focus + .reg-icon {
+  fill: var(--accent-color);
+}
+
+.form-comment:hover,
+.form-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -840,11 +826,10 @@ img {
 }
 
 .form-check {
-  position: relative;
+  position: absolute;
 }
 
 .form-check-text {
-  position: absolute;
   top: 0;
   display: flex;
   align-items: center;
@@ -858,7 +843,7 @@ img {
 .form-check-text span {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 
   margin-right: 7px;
   padding: 3px 2px;
@@ -884,8 +869,6 @@ img {
 
 .form-btn {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .form-btn:focus {

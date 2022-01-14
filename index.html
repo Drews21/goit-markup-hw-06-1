@@ -431,7 +431,7 @@
         
         <!------ Join Us ------>
         <div class="join-us">
-            <p class="join-us-text">присоединяйтесь</p>
+            <p class="footer-title join-us-text">присоединяйтесь</p>
 
             <ul class="join-us-list list">
                 <li class="join-us-item">
@@ -469,12 +469,12 @@
 <!------- Subscribe ------->
 
         <div class="subscribe">
-            <p class="subscribe-text">подпишитесь на рассылку</p>
+            <p class="footer-title subscribe-text">подпишитесь на рассылку</p>
             
             <form action="#" class="subscribe-form">
                 <input type="email" class="subscribe-input" name="email" placeholder="E-mail">
 
-                    <button class="sub-btn-txt" type="submit">Подписаться
+                    <button class="primary-btn sub-btn-txt" type="submit">Подписаться
                         <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icon-paper-plane.svg#icon-paper-plane"></use>
                         </svg>
@@ -500,8 +500,10 @@
             <p class="reg-text">Оставьте свои данные, мы вам перезвоним</p>
 
             <form action="#" class="form">
+
+                <!--name-->
                 <div class="form-field">
-                <label for="user-name" class="form-input-text">Имя</label> <!--name-->
+                <label for="user-name" class="form-input-text">Имя</label> 
                     <div class="form-input-wrap">
                         <input type="text" name="user-name" id="user-name" class="form-input"/>
                             <svg class="reg-icon" width="18" height="18">
@@ -511,9 +513,9 @@
                 </div>
                     
                 
-
+                <!--tel-->
                 <div class="form-field">
-                    <label for="user-phone" class="form-input-text">Телефон</label> <!--tel-->
+                    <label for="user-phone" class="form-input-text">Телефон</label> 
                     <div class="form-input-wrap">
                         <input type="text" name="user-phone" id="user-phone" class="form-input" />
                         <svg class="reg-icon" width="18" height="18">
@@ -522,16 +524,19 @@
                     </div>
                 </div>
 
+                <!--mail-->
                 <div class="form-field">
-                    <label for="user-email" class="form-input-text">Почта</label> <!--mail-->
+                    <label for="user-email" class="form-input-text">Почта</label> 
                     <div class="form-input-wrap">
                         <input type="text" name="user-name" id="user-email" class="form-input" />
                         <svg class="reg-icon" width="18" height="18">
-                            <use href="./images/registration-ico.svg#icon-mail"></use>
+                            <use href="./images/envelop-b.svg#icon-envelop-b"></use>
                         </svg>
                     </div>
                 </div>
 
+
+                <!--textArea-->
                 <div class="form-field-textarea">
                     <label for="comment" class="form-input-text">Комментарий</label>
                     <textarea name="comment" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
